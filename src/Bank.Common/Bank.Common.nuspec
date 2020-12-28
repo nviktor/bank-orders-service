@@ -1,0 +1,20 @@
+﻿<?xml version="1.0"?>
+<package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <version>$version$</version>
+    <authors>Bank</authors>
+    <owners>Bank</owners>
+    <id>Bank.Common</id>
+    <title>Bank.Common</title>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Библиотека вспомогательных функций и расширений.</description>
+    <tags>Common</tags>
+    <copyright>Copyright Bank 2019</copyright>
+    <dependencies>
+      <dependency id="NETStandard.Library" version="2.0.3" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="Bank.Common.dll" target="lib\netstandard2.0" />
+  </files>  
+</package>

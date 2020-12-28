@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bank.Digital.OrderService.Api</name>
+    </assembly>
+    <members>
+        <member name="M:Bank.Digital.OrderService.Api.Controllers.OrdersController.GetOrderList(System.Int32)">
+            <summary>
+            получаем все созданные заявки данным пользователем 
+            </summary>
+        </member>
+        <member name="M:Bank.Digital.OrderService.Api.Controllers.OrdersController.GetOrder(System.Guid)">
+            <summary>
+            получаем полную информацию по конкретной заявке 
+            </summary>
+        </member>
+        <member name="M:Bank.Digital.OrderService.Api.Controllers.OrdersController.CreateOrder(Bank.Digital.OrderService.Api.Contract.Orders.OrderCreateRequest)">
+            <summary>
+            создание новой заявки
+            </summary>
+        </member>
+        <member name="T:Bank.Digital.OrderService.Api.Controllers.TestsController">
+            <summary>
+            Тестовые АПИ
+            </summary>
+        </member>
+        <member name="M:Bank.Digital.OrderService.Api.Infrastructure.ConfigureSwaggerGenOptions.#ctor(Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Bank.Digital.OrderService.Api.Infrastructure.ConfigureSwaggerGenOptions"/> class.
+            </summary>
+            <param name="provider">The <see cref="T:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider">provider</see> used to generate Swagger documents.</param>
+        </member>
+        <member name="M:Bank.Digital.OrderService.Api.Infrastructure.ConfigureSwaggerGenOptions.Configure(Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions)">
+            <inheritdoc />
+        </member>
+        <member name="M:Bank.Digital.OrderService.Api.Infrastructure.GlobalExceptionFilter.OnException(Microsoft.AspNetCore.Mvc.Filters.ExceptionContext)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

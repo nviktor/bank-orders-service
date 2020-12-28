@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bank.Digital.OrderService.Api.Contract</name>
+    </assembly>
+    <members>
+        <member name="P:Bank.Digital.OrderService.Api.Contract.Orders.Order.Id">
+            <summary>
+            ID заявки
+            </summary>
+        </member>
+        <member name="P:Bank.Digital.OrderService.Api.Contract.Orders.Order.ApplicantId">
+            <summary>
+            Аппликант/проспект/ человек желающий оформить услугу
+            </summary>
+        </member>
+        <member name="P:Bank.Digital.OrderService.Api.Contract.Orders.Order.State">
+            <summary>
+            Состояние заявки
+            </summary>
+        </member>
+        <member name="P:Bank.Digital.OrderService.Api.Contract.Orders.Order.DateAdd">
+            <summary>
+            Дата создания заявки
+            </summary>
+        </member>
+        <member name="P:Bank.Digital.OrderService.Api.Contract.Orders.Order.ProductId">
+            <summary>
+            ID открываемого продукта ( РКО, гарантии, кредит)
+            </summary>
+        </member>
+        <member name="P:Bank.Digital.OrderService.Api.Contract.Orders.OrderCreateRequest.ApplicantId">
+            <summary>
+            Аппликант/проспект/ человек желающий оформить услугу
+            </summary>
+        </member>
+        <member name="P:Bank.Digital.OrderService.Api.Contract.Orders.OrderCreateRequest.DateAdd">
+            <summary>
+            Дата создания заявки
+            </summary>
+        </member>
+        <member name="P:Bank.Digital.OrderService.Api.Contract.Orders.OrderCreateRequest.ProductId">
+            <summary>
+            ID открываемого продукта ( РКО, гарантии, кредит)
+            </summary>
+        </member>
+        <member name="P:Bank.Digital.OrderService.Api.Contract.Orders.OrderCreateRequest.Ip">
+            <summary>
+            IP адрес с которого была создана заявка
+            </summary>
+        </member>
+        <member name="P:Bank.Digital.OrderService.Api.Contract.Orders.OrderCreateRequest.Utm">
+            <summary>
+            UTM метка
+            </summary>
+        </member>
+        <member name="P:Bank.Digital.OrderService.Api.Contract.Orders.OrderCreateRequest.GoogleAnalyticsId">
+            <summary>
+            аналитика от гугла
+            </summary>
+        </member>
+        <member name="P:Bank.Digital.OrderService.Api.Contract.Orders.OrderCreateRequest.Region">
+            <summary>
+            город
+            </summary>
+        </member>
+        <member name="P:Bank.Digital.OrderService.Api.Contract.Orders.OrderCreateRequest.Browser">
+            <summary>
+            браузер клиента
+            </summary>
+        </member>
+        <member name="P:Bank.Digital.OrderService.Api.Contract.Orders.OrderCreateRequest.BrowserUserAgent">
+            <summary>
+            юзер агент браузера
+            </summary>
+        </member>
+        <member name="F:Bank.Digital.OrderService.Api.Contract.Orders.OrderState.New">
+            <summary>
+            Новая
+            </summary>
+        </member>
+        <member name="F:Bank.Digital.OrderService.Api.Contract.Orders.OrderState.Filling">
+            <summary>
+            В процессе заполнения
+            </summary>
+        </member>
+        <member name="F:Bank.Digital.OrderService.Api.Contract.Orders.OrderState.Revision">
+            <summary>
+            На проверке
+            </summary>
+        </member>
+        <member name="F:Bank.Digital.OrderService.Api.Contract.Orders.OrderState.Rejected">
+            <summary>
+            Отклонена
+            </summary>
+        </member>
+        <member name="P:Bank.Digital.OrderService.Api.Contract.Orders.OrderUpdateRequest.TariffId">
+            <summary>
+            Id тарифа (совпадает с Id IBS)
+            </summary>
+        </member>
+        <member name="P:Bank.Digital.OrderService.Api.Contract.Orders.OrderUpdateRequest.PrepaymentMonth">
+            <summary>
+            Срок предоплаты в месяцах
+            </summary>
+        </member>
+    </members>
+</doc>

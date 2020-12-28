@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bank.Common.WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:Bank.Common.WebApi.Exceptions.HttpException.BadRequest(System.String,System.Nullable{System.Int32},System.Exception)">
+            <summary>
+                400
+            </summary>
+            <param name="message"></param>
+            <param name="errorCode"></param>
+            <param name="exception"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bank.Common.WebApi.Exceptions.HttpException.Unauthorized(System.String,System.Nullable{System.Int32},System.Exception)">
+            <summary>
+                401
+            </summary>
+            <param name="message"></param>
+            <param name="errorCode"></param>
+            <param name="exception"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bank.Common.WebApi.Exceptions.HttpException.Forbidden(System.String,System.Nullable{System.Int32},System.Exception)">
+            <summary>
+                403
+            </summary>
+            <param name="message"></param>
+            <param name="errorCode"></param>
+            <param name="exception"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bank.Common.WebApi.Exceptions.HttpException.Conflict(System.String,System.Nullable{System.Int32},System.Exception)">
+            <summary>
+                409
+            </summary>
+            <param name="message"></param>
+            <param name="errorCode"></param>
+            <param name="exception"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bank.Common.WebApi.Exceptions.HttpException.Gone(System.String,System.Nullable{System.Int32},System.Exception)">
+            <summary>
+                410
+            </summary>
+            <param name="message"></param>
+            <param name="errorCode"></param>
+            <param name="exception"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bank.Common.WebApi.Exceptions.HttpException.InternalServerError(System.String,System.Nullable{System.Int32},System.Exception)">
+            <summary>
+                500
+            </summary>
+            <param name="message"></param>
+            <param name="errorCode"></param>
+            <param name="exception"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Bank.Common.WebApi.HostedServices.IInfiniteLoopWorkItem">
+            <summary>
+            Задача, которую нужно выполнять в бесконечном цикле
+            Регистрация в DI:
+            services.AddScoped{InfiniteLoopWorkItemImplementation} допустимо AddSingleton
+            services.AddHostedService{InfiniteLoopHostedService{IInfiniteLoopWorkItemImplementation}}()
+            </summary>
+        </member>
+        <member name="P:Bank.Common.WebApi.HostedServices.IInfiniteLoopWorkItem.Interval">
+            <summary>
+            Временной интервал между итерациями
+            </summary>
+        </member>
+        <member name="M:Bank.Common.WebApi.HostedServices.IInfiniteLoopWorkItem.DoAsync(System.Threading.CancellationToken)">
+            <summary>
+            Работа
+            </summary>
+        </member>
+        <member name="T:Bank.Common.WebApi.HostedServices.InfiniteLoopHostedService`1">
+            <summary>
+            Асинхронное выполнение работы в бесконечном цикле.
+            Регистрация в DI:
+            services.AddScoped{IInfiniteLoopWorkItemImplementation} допустимо AddSingleton
+            services.AddHostedService{InfiniteLoopHostedService{IInfiniteLoopWorkItemImplementation}}()
+            </summary>
+        </member>
+        <member name="M:Bank.Common.WebApi.HostedServices.InfiniteLoopHostedService`1.#ctor(System.IServiceProvider,Microsoft.Extensions.Logging.ILogger{Bank.Common.WebApi.HostedServices.InfiniteLoopHostedService{Bank.Common.WebApi.HostedServices.IInfiniteLoopWorkItem}})">
+            <inheritdoc />
+        </member>
+        <member name="M:Bank.Common.WebApi.HostedServices.InfiniteLoopHostedService`1.StartAsync(System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:Bank.Common.WebApi.HostedServices.InfiniteLoopHostedService`1.StopAsync(System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="T:Bank.Common.WebApi.HostedServices.IStartupTask">
+            <summary>
+            One time job, executes on service start. Executes in separate scope so use DI
+            </summary>
+            <remarks>
+            DI registration:
+            services.AddTransient{IStartupTask, IStartupTaskImplementation}();
+            services.AddHostedService{StartupperHostedService}()
+            </remarks>
+        </member>
+        <member name="M:Bank.Common.WebApi.HostedServices.IStartupTask.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute
+            </summary>
+        </member>
+        <member name="T:Bank.Common.WebApi.HostedServices.StartupperHostedService">
+            <summary>
+            Разовое выполнение кода на старте сервиса.
+            </summary>
+            <remarks>
+            DI registration:
+            services.AddTransient{IStartupTask, IStartupTaskImplementation}();
+            services.AddHostedService{StartupperHostedService}()
+            </remarks>
+        </member>
+        <member name="M:Bank.Common.WebApi.HostedServices.StartupperHostedService.StartAsync(System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:Bank.Common.WebApi.HostedServices.StartupperHostedService.StopAsync(System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="T:Bank.Common.WebApi.ServiceCollectionExtensions.ServiceRegistrationExtensions">
+            <summary>
+            Расширения регистрации общих служб DI
+            </summary>
+        </member>
+        <member name="M:Bank.Common.WebApi.ServiceCollectionExtensions.ServiceRegistrationExtensions.AddAutoMapper(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Добавление AutoMapper. Регистрация профилей из всех зависимостей проекта
+            </summary>
+        </member>
+        <member name="T:Bank.Common.WebApi.Swagger.ApiClientErrorException">
+            <summary>
+            Исключение генерируемое АПИ клиентами, сгенерированными nswag
+            </summary>
+        </member>
+        <member name="M:Bank.Common.WebApi.Swagger.ApiClientErrorException.#ctor(System.String,System.Int32,System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,System.Collections.Generic.IEnumerable{System.String}},System.Exception)">
+            <inheritdoc />
+        </member>
+        <member name="P:Bank.Common.WebApi.Swagger.ApiClientErrorException.StatusCode">
+            <summary>
+            Http код ответа АПИ
+            </summary>
+        </member>
+        <member name="P:Bank.Common.WebApi.Swagger.ApiClientErrorException.Response">
+            <summary>
+            Ответ АПИ
+            </summary>
+        </member>
+        <member name="P:Bank.Common.WebApi.Swagger.ApiClientErrorException.Headers">
+            <summary>
+            Коллекция заголовков ответа
+            </summary>
+        </member>
+    </members>
+</doc>

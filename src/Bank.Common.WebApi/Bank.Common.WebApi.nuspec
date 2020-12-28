@@ -1,0 +1,32 @@
+﻿<?xml version="1.0"?>
+<package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata>
+    <id>Bank.Common.WebApi</id>
+    <version>$version$</version>
+    <title>Bank.Common.WebApi</title>
+    <authors>Bank</authors>
+    <owners>Bank</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Библиотека вспомогательных классов и расширений для WebApi</description>
+    <copyright>Copyright Bank 2019</copyright>
+    <tags>Common WebApi</tags>
+    <dependencies>
+      <dependency id="NETStandard.Library" version="2.0.3" />
+      <dependency id="Bank.Common" version="1.0.0" />
+      <dependency id="FluentValidation" version="8.1.3" />
+      <dependency id="System.Configuration.ConfigurationManager" version="4.5.0" />
+      <dependency id="Microsoft.Extensions.Hosting.Abstractions" version="2.2.0" />
+      <dependency id="Microsoft.Extensions.DependencyModel" version="2.1.0" />
+      <dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" version="2.2.0" />
+      <dependency id="Newtonsoft.Json" version="12.0.1" />
+      <dependency id="prometheus-net.AspNetCore" version="3.1.0" />
+      <dependency id="Swashbuckle.AspNetCore" version="4.0.1" />
+      <dependency id="AspNetCore.HealthChecks.SqlServer" version="2.2.0" />
+      <dependency id="AspNetCore.HealthChecks.Uris" version="2.2.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="Bank.Common.WebApi.dll" target="lib\netstandard2.0" />
+    <file src="Bank.Common.WebApi.xml" target="lib\netstandard2.0" />
+  </files>  
+</package>

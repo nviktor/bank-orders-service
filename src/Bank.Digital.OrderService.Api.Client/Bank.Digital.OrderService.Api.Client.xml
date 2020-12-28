@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bank.Digital.OrderService.Api.Client</name>
+    </assembly>
+    <members>
+        <member name="M:Bank.Digital.OrderService.Api.Client.IOrderServiceClient.GetOrderListAsync(System.Nullable{System.Int32})">
+            <summary>получаем все созданные заявки данным пользователем</summary>
+            <returns>Success</returns>
+            <exception cref="T:Bank.Common.WebApi.Swagger.ApiClientErrorException">A server side error occurred.</exception>
+        </member>
+        <member name="M:Bank.Digital.OrderService.Api.Client.IOrderServiceClient.GetOrderListAsync(System.Nullable{System.Int32},System.Threading.CancellationToken)">
+            <summary>получаем все созданные заявки данным пользователем</summary>
+            <returns>Success</returns>
+            <exception cref="T:Bank.Common.WebApi.Swagger.ApiClientErrorException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+        <member name="M:Bank.Digital.OrderService.Api.Client.IOrderServiceClient.CreateOrderAsync(Bank.Digital.OrderService.Api.Contract.Orders.OrderCreateRequest)">
+            <summary>создание новой заявки</summary>
+            <returns>Success</returns>
+            <exception cref="T:Bank.Common.WebApi.Swagger.ApiClientErrorException">A server side error occurred.</exception>
+        </member>
+        <member name="M:Bank.Digital.OrderService.Api.Client.IOrderServiceClient.CreateOrderAsync(Bank.Digital.OrderService.Api.Contract.Orders.OrderCreateRequest,System.Threading.CancellationToken)">
+            <summary>создание новой заявки</summary>
+            <returns>Success</returns>
+            <exception cref="T:Bank.Common.WebApi.Swagger.ApiClientErrorException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+        <member name="M:Bank.Digital.OrderService.Api.Client.IOrderServiceClient.GetOrderAsync(System.Guid)">
+            <summary>получаем полную информацию по конкретной заявке</summary>
+            <returns>Success</returns>
+            <exception cref="T:Bank.Common.WebApi.Swagger.ApiClientErrorException">A server side error occurred.</exception>
+        </member>
+        <member name="M:Bank.Digital.OrderService.Api.Client.IOrderServiceClient.GetOrderAsync(System.Guid,System.Threading.CancellationToken)">
+            <summary>получаем полную информацию по конкретной заявке</summary>
+            <returns>Success</returns>
+            <exception cref="T:Bank.Common.WebApi.Swagger.ApiClientErrorException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+        <member name="M:Bank.Digital.OrderService.Api.Client.IOrderServiceClient.GetAsync(System.String)">
+            <returns>Success</returns>
+            <exception cref="T:Bank.Common.WebApi.Swagger.ApiClientErrorException">A server side error occurred.</exception>
+        </member>
+        <member name="M:Bank.Digital.OrderService.Api.Client.IOrderServiceClient.GetAsync(System.String,System.Threading.CancellationToken)">
+            <returns>Success</returns>
+            <exception cref="T:Bank.Common.WebApi.Swagger.ApiClientErrorException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+        <member name="M:Bank.Digital.OrderService.Api.Client.IOrderServiceClient.ExceptionAsync(System.String)">
+            <returns>Success</returns>
+            <exception cref="T:Bank.Common.WebApi.Swagger.ApiClientErrorException">A server side error occurred.</exception>
+        </member>
+        <member name="M:Bank.Digital.OrderService.Api.Client.IOrderServiceClient.ExceptionAsync(System.String,System.Threading.CancellationToken)">
+            <returns>Success</returns>
+            <exception cref="T:Bank.Common.WebApi.Swagger.ApiClientErrorException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+        <member name="M:Bank.Digital.OrderService.Api.Client.OrderServiceClient.GetOrderListAsync(System.Nullable{System.Int32})">
+            <summary>получаем все созданные заявки данным пользователем</summary>
+            <returns>Success</returns>
+            <exception cref="T:Bank.Common.WebApi.Swagger.ApiClientErrorException">A server side error occurred.</exception>
+        </member>
+        <member name="M:Bank.Digital.OrderService.Api.Client.OrderServiceClient.GetOrderListAsync(System.Nullable{System.Int32},System.Threading.CancellationToken)">
+            <summary>получаем все созданные заявки данным пользователем</summary>
+            <returns>Success</returns>
+            <exception cref="T:Bank.Common.WebApi.Swagger.ApiClientErrorException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+        <member name="M:Bank.Digital.OrderService.Api.Client.OrderServiceClient.CreateOrderAsync(Bank.Digital.OrderService.Api.Contract.Orders.OrderCreateRequest)">
+            <summary>создание новой заявки</summary>
+            <returns>Success</returns>
+            <exception cref="T:Bank.Common.WebApi.Swagger.ApiClientErrorException">A server side error occurred.</exception>
+        </member>
+        <member name="M:Bank.Digital.OrderService.Api.Client.OrderServiceClient.CreateOrderAsync(Bank.Digital.OrderService.Api.Contract.Orders.OrderCreateRequest,System.Threading.CancellationToken)">
+            <summary>создание новой заявки</summary>
+            <returns>Success</returns>
+            <exception cref="T:Bank.Common.WebApi.Swagger.ApiClientErrorException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+        <member name="M:Bank.Digital.OrderService.Api.Client.OrderServiceClient.GetOrderAsync(System.Guid)">
+            <summary>получаем полную информацию по конкретной заявке</summary>
+            <returns>Success</returns>
+            <exception cref="T:Bank.Common.WebApi.Swagger.ApiClientErrorException">A server side error occurred.</exception>
+        </member>
+        <member name="M:Bank.Digital.OrderService.Api.Client.OrderServiceClient.GetOrderAsync(System.Guid,System.Threading.CancellationToken)">
+            <summary>получаем полную информацию по конкретной заявке</summary>
+            <returns>Success</returns>
+            <exception cref="T:Bank.Common.WebApi.Swagger.ApiClientErrorException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+        <member name="M:Bank.Digital.OrderService.Api.Client.OrderServiceClient.GetAsync(System.String)">
+            <returns>Success</returns>
+            <exception cref="T:Bank.Common.WebApi.Swagger.ApiClientErrorException">A server side error occurred.</exception>
+        </member>
+        <member name="M:Bank.Digital.OrderService.Api.Client.OrderServiceClient.GetAsync(System.String,System.Threading.CancellationToken)">
+            <returns>Success</returns>
+            <exception cref="T:Bank.Common.WebApi.Swagger.ApiClientErrorException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+        <member name="M:Bank.Digital.OrderService.Api.Client.OrderServiceClient.ExceptionAsync(System.String)">
+            <returns>Success</returns>
+            <exception cref="T:Bank.Common.WebApi.Swagger.ApiClientErrorException">A server side error occurred.</exception>
+        </member>
+        <member name="M:Bank.Digital.OrderService.Api.Client.OrderServiceClient.ExceptionAsync(System.String,System.Threading.CancellationToken)">
+            <returns>Success</returns>
+            <exception cref="T:Bank.Common.WebApi.Swagger.ApiClientErrorException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+    </members>
+</doc>

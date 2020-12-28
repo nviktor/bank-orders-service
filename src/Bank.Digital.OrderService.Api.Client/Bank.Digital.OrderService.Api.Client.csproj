@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <Title>Bank.Digital.OrderService.Api.Client</Title>
+        <Description>C# Клиент для сервиса работы с заявками</Description>
+        <Authors>Bank</Authors>
+        <Company>Bank</Company>
+        <Copyright>Bank 2019</Copyright>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <DocumentationFile>Bank.Digital.OrderService.Api.Client.xml</DocumentationFile>
+      <NoWarn>1701;1702;1591 </NoWarn>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+      <DocumentationFile>Bank.Digital.OrderService.Api.Client.xml</DocumentationFile>
+      <NoWarn>1701;1702;1591 </NoWarn>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Bank.Common.WebApi\Bank.Common.WebApi.csproj" />
+      <ProjectReference Include="..\Bank.Digital.OrderService.Api.Contract\Bank.Digital.OrderService.Api.Contract.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+      <PackageReference Include="NSwag.MSBuild" Version="12.3.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="Bank.Digital.OrderService.Api.Client.xml">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+    <Target Name="NSwag" BeforeTargets="CoreCompile">
+        <Exec Command="$(NSwagExe_Core22) run /variables:RootNamespace=$(RootNamespace)" />
+    </Target>
+    
+</Project>

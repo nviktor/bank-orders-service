@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+      <DocumentationFile>C:\Projects\bank.common\src\Bank.Common.WebApi\Bank.Common.WebApi.xml</DocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AspNetCore.HealthChecks.SqlServer" Version="2.2.0" />
+      <PackageReference Include="AspNetCore.HealthChecks.Uris" Version="2.2.3" />
+      <PackageReference Include="Microsoft.AspNetCore" Version="2.2.0" />
+      <PackageReference Include="AutoMapper" Version="8.0.0">
+        <PrivateAssets>all</PrivateAssets>
+      </PackageReference>
+      <PackageReference Include="FluentValidation" Version="8.3.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Diagnostics.HealthChecks" Version="2.2.0" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.2.0" />
+      <PackageReference Include="Microsoft.Extensions.DependencyModel" Version="2.1.0" />
+      <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="2.2.0" />
+      <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="2.2.0" />
+      <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+      <PackageReference Include="prometheus-net.AspNetCore" Version="3.1.1" />
+      <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
+      <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.5.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Bank.Common.WebApi.nuspec" />
+      <Content Include="Bank.Common.WebApi.nuspec">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
+
+    <ItemGroup>
+      <None Update="Bank.Common.WebApi.xml">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Bank.Common\Bank.Common.csproj" />
+    </ItemGroup>
+
+</Project>

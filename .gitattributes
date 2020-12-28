@@ -1,0 +1,6 @@
+* text=auto
+
+*.cs text
+*.sln text
+*.csproj text
+*.json text
